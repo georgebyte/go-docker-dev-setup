@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+    server:
+        build:
+            context: ./server
+            args:
+                app_env: ${APP_ENV}
+        volumes:
+            - ./server:/go/src/github.com/jurebajt/personal-finance/server
+        ports:
+            - '5000:8080'
+        tty: true
