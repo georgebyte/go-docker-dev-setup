@@ -5,8 +5,8 @@ ENV APP_ENV $app_env
 
 RUN curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
 
-COPY . /go/src/github.com/jurebajt/personal-finance/server
-WORKDIR /go/src/github.com/jurebajt/personal-finance/server
+COPY . /go/src/github.com/jurebajt/go-docker-dev-setup/server
+WORKDIR /go/src/github.com/jurebajt/go-docker-dev-setup/server
 
 RUN dep ensure
 RUN go install

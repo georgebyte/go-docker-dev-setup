@@ -1,4 +1,4 @@
-# Personal finance
+# go-docker-dev-setup
 
 ## Running the app locally
 
